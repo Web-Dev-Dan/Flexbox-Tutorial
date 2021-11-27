@@ -1,7 +1,9 @@
 :root {
     --font-primary: 'Fira Sans', sans-serif;
+    --font-secondary: monospace;
     --color-primary: #ff4d4d;
     --color-secondary: white;
+    --color-black: #000;
 }
 
 * {
@@ -13,6 +15,7 @@
 html, body {
     font-family: var(--font-primary);
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -147,6 +150,159 @@ h3 {
 }
 
 
+
+.screen {
+    background-color: var(--color-secondary);
+    width: 80%;
+    max-width: 80rem;
+    min-height: 60vh; 
+    margin: 5rem 0;
+    border-radius: .5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.screen-nav {
+    background-color: lightgray;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.screen-body {
+    display: flex;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+}
+
+.circle-red {
+    background-color: var(--color-primary);
+}
+.circle-yellow {
+    background-color: rgb(237, 237, 37);
+}
+.circle-green {
+    background-color: rgb(43, 170, 43);
+}
+
+.display-screen-body {
+    flex: 1;
+    padding: 2rem;
+}
+
+.display-container {
+    background-color: #e0bbe4;
+    width: 100%;
+    height: 100%;
+}
+
+.display-container-item {
+    background-color: #957dad;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #724c98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 200;
+    z-index: 100;
+}
+
+.style-box {
+    background-color: var(--color-secondary);
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.style-box p {
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+    text-align: left;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.style-box-inner {
+    padding: 0 4rem;
+    text-align: left;
+}
+
+.style-box-inner > input {
+    width: 100%;
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border: .1rem solid gray;
+    border-radius: .5rem;
+    outline: none;
+}
+
+.buttons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: var(--color-secondary);
+    font-weight: 500;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    transition: all .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+.btn-positive {
+    background-color: rgb(43, 170, 43);
+}
+
+.btn-negative {
+    background-color: var(--color-primary);
+}
+
+
+
+
+.code {
+    padding: .2rem .4rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+}
+
+.code-red {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.code-white {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+
 .red {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -159,6 +315,10 @@ h3 {
 
 .bold {
     font-weight: 900;
+}
+
+.purple-light {
+    color: #e0bbe4;
 }
 
 /* Animations */
@@ -196,4 +356,8 @@ h3 {
     .text p {
         font-size: 2.2rem;
     }
+    .screen {
+        width: 100%;
+    }
   }
+
