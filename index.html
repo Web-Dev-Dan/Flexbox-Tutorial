@@ -23,6 +23,7 @@
 <body>
 
     <div class="container">
+        <!-- Home Section -->
         <section class="red top-section">
             <div class="hero">
                 <nav>
@@ -34,12 +35,13 @@
                 </header>
                 <div class="hero-prompt">
                     <p>Scroll to start!</p>
-                    <i id="scrollToSection1Btn" class="fas fa-angle-double-down"></i>
+                    <i id="scrollToAbout" class="fas fa-angle-double-down"></i>
                 </div>
             </div>
         </section>
 
-        <section id="section1" class="white">
+        <!-- About Section -->
+        <section id="about" class="white">
             <h3>What is Flexbox?</h3>
             <div class="text">
                 <p>The Flexible Box Module, or <span class="bold">Flexbox</span>, allows us to build responsive website
@@ -50,7 +52,67 @@
             </div>
             <div class="section-prompt">
                 <p>Let's begin!</p>
-                <i class="fas fa-angle-double-down"></i>
+                <i id="scrollToDisplay" class="fas fa-angle-double-down"></i>
+            </div>
+        </section>
+
+        <!-- Display Section -->
+        <section id="display" class="red">
+            <h3>Display</h3>
+            <div class="text">
+                <p>In order to use Flexbox, we must first apply <code class="code code-red">display: flex;</code> to the
+                    container (parent) of the items (children) we want to affect.</p>
+                <p>Let's start by making a <code class="code code-red">&lt;div&gt;</code> element with the class of
+                    "container".</p>
+                <p>Within the "container" element, let's make 3 more <code class="code code-red">&lt;div&gt;</code>
+                    elements,
+                    each with the class of "item".</p>
+            </div>
+
+            <div class="screen">
+                <div class="screen-nav">
+                    <div class="circle circle-red"></div>
+                    <div class="circle circle-yellow"></div>
+                    <div class="circle circle-green"></div>
+                </div>
+                <div class="screen-body">
+                    <div class="display-screen-body">
+                        <div id="displayFlexContainer" class="display-container">
+                            <div class="display-container-item">
+                                <p>1</p>
+                            </div>
+                            <div class="display-container-item">
+                                <p>2</p>
+                            </div>
+                            <div class="display-container-item">
+                                <p>3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>Add <code class="code code-red">display: flex;</code> to the
+                    container element above.</p>
+                <div class="style-box">
+                    <p>.container {</p>
+                    <div class="style-box-inner">
+                        <p>background-color: <span class="purple-light">#e0bbe4</span>;</p>
+                        <input id="inputDisplayFlex" type="text">
+                    </div>
+                    <p>}</p>
+                    <div class="buttons">
+                        <button id="resetDisplayFlex" class="btn btn-negative">Reset</button>
+                        <button id="submitDisplayFlex" class="btn btn-positive">Submit</button>
+                    </div>
+                </div>
+                <p>What happens to the items within it?</p>
+            </div>
+
+            <div class="section-prompt">
+                <p>Flex-Direction</p>
+                <i id="scrollToDisplay" class="fas fa-angle-double-down"></i>
             </div>
         </section>
 
